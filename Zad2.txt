@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Zad2 {
+
+    public static void main(String[] args) {
+        Random rand = new Random();
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] tab = new int[n];
+        for (int i = 0; i < n; i++) {
+            tab[i] = rand.nextInt(100) - 50;
+            System.out.print(tab[i] + " ");
+        }
+    }
+}
